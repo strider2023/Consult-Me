@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="5dp"
+        android:cropToPadding="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:tint="@android:color/white"
+        android:src="@drawable/ic_face_white_36dp"
+        android:background="@drawable/shape_oval_color_primary"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center|right"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/adapter_consult_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="5dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/secondary_text_light"
+                android:text="Test"/>
+
+            <TextView
+                android:id="@+id/adapter_consult_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="NEW"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shape_base_dark"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/adapter_consult_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:singleLine="true"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="14sp"
+            android:text="Test"/>
+
+        <TextView
+            android:id="@+id/adapter_consult_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Test"/>
+    </LinearLayout>
+
+</LinearLayout>

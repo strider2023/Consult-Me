@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="48sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="@dimen/splash_divider_width"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/white"
+                app:hintTextAppearance="@style/AppTextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/sign_up_name"
+                    style="@style/SplashEdditext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="@dimen/splash_divider_width"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/white" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="@dimen/splash_divider_width"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/white"
+                app:hintTextAppearance="@style/AppTextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/sign_up_email"
+                    style="@style/SplashEdditext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="@dimen/splash_divider_width"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/white" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="@dimen/splash_divider_width"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/white"
+                app:hintTextAppearance="@style/AppTextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/sign_up_phone"
+                    style="@style/SplashEdditext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="10" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="@dimen/splash_divider_width"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/white" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="@dimen/splash_divider_width"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/white"
+                app:hintTextAppearance="@style/AppTextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/sign_up_password"
+                    style="@style/SplashEdditext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Sign Up" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/sign_up_facebook_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#3b5998"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Connect Using Facebook"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/splash_divider_footer"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Already a user?"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="10dp"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
